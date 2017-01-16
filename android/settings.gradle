@@ -1,0 +1,5 @@
+rootProject.name = 'GrandmaRadio'
+
+include ':react-native-orientation', ':react-native-audio-streaming', ':app'
+project(':react-native-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation/android')
+project(':react-native-audio-streaming').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio-streaming/android')
