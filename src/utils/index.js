@@ -1,3 +1,4 @@
+// @flow
 export const normalize = (payload, idKey = 'id') => (
   payload.reduce((acc, item) => {
     acc[item[idKey]] = item;
