@@ -13,15 +13,13 @@ export default class ChannelList extends Component {
       <ListView
         enableEmptySections
         dataSource={dataSource(this.props.list)}
-        renderRow={(channel) => {
-          console.log(channel)
-          return <Channel
+        renderRow={(channel) => (
+          <Channel
             {...channel}
             onSelectChannel={this.props.onChange}
-            selected={
-              this.props.selected === channel.id
-            } />
-        } }
+            selected={this.props.selected === channel.id}
+          />
+        )}
       />
     );
   }

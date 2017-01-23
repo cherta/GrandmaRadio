@@ -20,12 +20,6 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {list: {}, current: null, otientation: null};
-    UIManager.setLayoutAnimationEnabledExperimental &&
-      UIManager.setLayoutAnimationEnabledExperimental(true);
-  }
-
-  componentWillUpdate() {
-    LayoutAnimation.easeInEaseOut();
   }
 
   componentDidMount() {
